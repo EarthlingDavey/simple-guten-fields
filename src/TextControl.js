@@ -13,7 +13,7 @@ const ControlField = withSelect(
 		}
 
 		return {
-			value: value[row_index][property_key],
+			value: typeof value[row_index][property_key] !== "undefined" ? value[row_index][property_key] : props.field.default,
 			key,
 			label: `Set ${property_key.replace('_', ' ')}`
 		};

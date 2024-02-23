@@ -64,10 +64,12 @@ function sgf_post_fields( $fields_array ) {
 					'type'       => 'object',
 					'properties' => [
 						'url'       => [
-							'type' => 'string',
+							'type'    => 'string',
+							'default' => '',
 						],
 						'site_name' => [
-							'type' => 'string',
+							'type'    => 'string',
+							'default' => '',
 						],
 					],
 				]
